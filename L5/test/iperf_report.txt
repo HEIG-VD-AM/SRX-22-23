@@ -1,0 +1,45 @@
+*** Testing openvpn ***
+MainS to FarS
+[  1] local 172.16.0.1 port 50032 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0125 sec  1.01 GBytes   871 Mbits/sec
+MainC1 to FarC1
+[  1] local 10.0.1.10 port 38350 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0107 sec   729 MBytes   611 Mbits/sec
+Remote to FarC2
+[  1] local 172.16.0.10 port 45072 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0096 sec   723 MBytes   606 Mbits/sec
+=== End of openvpn report ===
+
+*** Testing wireguard ***
+MainS to FarS
+[  1] local 172.16.0.1 port 49296 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0368 sec  1.29 GBytes  1.10 Gbits/sec
+MainC1 to FarC1
+[  1] local 10.0.1.10 port 57258 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0407 sec  1.25 GBytes  1.07 Gbits/sec
+Remote to FarC2
+[  1] local 172.16.0.3 port 53338 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0378 sec  1.30 GBytes  1.12 Gbits/sec
+=== End of wireguard report ===
+
+*** Testing ipsec ***
+MainS to FarS
+[  1] local 10.0.1.2 port 46542 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0116 sec   592 MBytes   496 Mbits/sec
+MainC1 to FarC1
+[  1] local 10.0.1.10 port 57370 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0044 sec  2.04 GBytes  1.75 Gbits/sec
+Remote to FarC2
+[  1] local 10.4.0.1 port 57176 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0035 sec   539 MBytes   452 Mbits/sec
+=== End of ipsec report ===
+
